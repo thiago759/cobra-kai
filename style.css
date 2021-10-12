@@ -1,0 +1,379 @@
+/*    fonts   */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');/* ''megrim', cursive*/
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');/* 'Croissant One', cursive;*/
+
+/*            */
+
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: montserrat;
+	animation: body 2s ease;
+}
+@keyframes body{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity:1;
+  }
+}
+nav {
+	background: transparent;     /*#5434af*/
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+.logo #cobra{
+  color: Black;
+  font-family: 'Poppins', cursive;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: #1d075f;
+	transition: .5s;
+	text-decoration: none;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+	color: Black;
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgb(38, 39, 117);
+		background: radial-gradient(circle, rgba(38, 39, 117, 1) 0%, rgba(0, 17, 175, 1) 100%);
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #fff;
+		font-weight: bold;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+
+.primary-btn{
+  background: transparent;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover{
+  background: #1b1b1b;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.video-section{
+  object-fit: cover;
+  width:100%;
+}
+
+.banner{
+  position: relative;
+  z-index: -1;
+}
+
+.banner:after{
+  position: absolute;
+  content:"";
+  inset:0;
+  height:100%;
+  width:100%;
+  opacity: 0.4;
+}
+
+.banner h1{
+  font-size: 9vw;
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 73px;
+}
+
+.banner-container{
+  position: absolute;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  content:"";
+  text-align: center;
+  top:60%;
+  transform: translateY(-55%);
+  z-index:9;
+}
+
+.banner-container p{
+  color: #ffffff;
+  max-width: 710px;
+  width:100%;
+  margin:0 auto;
+  padding: 25px 0 33px;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.banner-container a{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width:750px){
+  
+  .banner-container p {
+    width: 90vw;
+}
+  .banner-container h1{
+    
+  }
+  .primary-btn{
+    background: transparent;
+    width:200px;
+  }
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+}
+
+#team_1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.card_1 img{
+  width:90%;
+  position: relative;
+  z-index: -1;
+  margin-left: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+}
+
+.card_1 #link_1{  
+  transition: all 0.3s;
+  background: linear-gradient(310deg, #CD5102, #FF0000);
+  border: 3px solid #fff;
+  width: 190px;
+  height: 50px;
+  margin-left: 130px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: -60px;
+  font-weight: bold;
+}
+.card_1 #link_1:hover{
+  transform: scale(1.0);
+}
+
+.card_1{
+  animation: cards 2s ease backwards;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.card_1 h5{
+  cursor: pointer;
+}
+
+.card_1:hover{
+  transform: scale(1.1);
+}
+@keyframes cards{
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+.hero{
+  width:100%;
+  height:400px;
+  background: url(/Atores/Cobra.jpeg) no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.hero:hover{
+  transform: scale(1.1);
+}
+.hero:before{
+  content:"";
+  background: rgba(0, 0, 0, 0.40);
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: -1;
+}
+
+.hero-detail{
+  border: 1px solid transparent;
+  width: 80%;
+  margin:0 auto;
+  color:#FFF;
+}
+.hero-detail h1{
+  margin-top: 2.2em;
+  font-size: 4.5em;
+  font-family: 'Megrim', cursive;
+}
+.hero .hero-detail h1{
+  margin:0 ;
+}
+.hero .hero-detail p{
+  font-family: 'Monospace', sans-serif;
+  margin:auto;
+  text-align: left;
+}
+
+.hero .hero-detail a{
+  font-family: 'Roboto';
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+}
+p::selection{
+  background-color: #CB3837;
+}
+h1::selection{
+  background-color: #CB3837;
+}
+h2::selection {
+  background-color: #CB3837;
+}
+h3::selection {
+  background-color: #CB3837;
+}
+h4::selection {
+  background-color: #CB3837;
+}
+h5::selection {
+  background-color: #CB3837;
+}
+
+.risco{
+  width:100%;
+  height:10px;
+  background-color: #FF5800;
+  margin-bottom: -5px;
+}
+
+footer{
+  background: #000000;
+  width:100%;
+  height: 400px;
+  color:white;
+  font-weight: bold;
+}
+footer h3{
+  
+}
+footer .icons{
+  display: flex;
+  justify-content: space-evenly;
+}
+footer img{
+  width:100px;
+  display: flex;
+  margin: auto;
+  filter: saturate(0.2);
+}
+footer p{
+  text-align: center;
+}
